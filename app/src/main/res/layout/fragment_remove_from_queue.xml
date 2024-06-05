@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BottomDialog.RemoveFromQueueFragment"
+    android:backgroundTint="@color/bottom_dialog"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/btm_remove_dialog_track_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Song Title"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/ripple_effect"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/btm_remove_dialog_remove_queue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remove From Queue"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:foreground="@drawable/ripple_effect"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

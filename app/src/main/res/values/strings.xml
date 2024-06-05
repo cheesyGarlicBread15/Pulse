@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pulse</string>
+    <string name="fragment_songs">SONGS</string>
+    <string name="fragment_playlists">PLAYLISTS</string>
+    <string name="fragment_favorites">FAVORITES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

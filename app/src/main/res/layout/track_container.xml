@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/track_img"
+            android:src="@drawable/music"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_name"
+            android:text="Track Name"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/track_img"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_artist"
+            android:text="Track Artist"
+            android:layout_below="@id/track_name"
+            android:layout_toRightOf="@id/track_img"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dash"
+            android:text="-"
+            android:layout_below="@id/track_name"
+            android:layout_toRightOf="@id/track_artist"
+            android:textSize="10sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_album"
+            android:text="Track Album"
+            android:layout_below="@id/track_name"
+            android:layout_toRightOf="@id/dash"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songs_fragment_popup"
+        android:src="@drawable/dots_vertical"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="8dp"
+        />
+
+</RelativeLayout>

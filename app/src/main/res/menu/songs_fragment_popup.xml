@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/songs_fragment_add_playlist"
+        android:title="Add To Playlist" />
+    <item
+        android:id="@+id/songs_fragment_add_queue"
+        android:title="Add To Queue" />
+    <item
+        android:id="@+id/songs_fragment_add_favorites"
+        android:title="Add To Favorites" />
+</menu>
